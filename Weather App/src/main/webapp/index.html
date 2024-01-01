@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>My Weather App</title>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="stylesheet" href="style.css" />
+<style type="text/css">
+/* Resetting some default styles */
+body, h1, form {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: #363A6E;
+	/* Change the background color to a blue shade */
+}
+
+/* Style the container for the welcome message and form */
+div {
+	margin-top: 50px;
+}
+
+/* Style the welcome message */
+h1 {
+	color: #fff;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	/* Add a subtle text shadow */
+}
+
+/* Style the form */
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+}
+
+/* Style the input field */
+input {
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+/* Style the submit button */
+button {
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* Style the image */
+img {
+	max-width: 100%;
+	height: auto;
+	filter: drop-shadow(10px 10px 10px black);
+}
+
+/* Add styling for weather icon */
+.weather-icon {
+	font-size: 48px;
+	color: #fff;
+	margin-top: 10px;
+}
+
+/* Additional styles for a responsive design */
+@media ( max-width : 600px) {
+	h1 {
+		font-size: 24px;
+	}
+}
+</style>
+</head>
+<body>
+	<div style="color: white; text-align: center">
+		<img
+			src="https://imgs.search.brave.com/Lm-JXD3bnKUbFymhFSLVVk0Zn9YEH92eVROzZX3Azeo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nYWxsLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMTEvV2Vh/dGhlci1QTkctRnJl/ZS1JbWFnZS5wbmc"
+			alt="Weather Wallpaper" width="200px" height="200px">
+
+		<h1 style="color: red;">Current Weather</h1>
+
+		<form action="Myservlet" method="post" class="searchInput">
+			<input type="text" placeholder="Enter City Name" name="userInput">
+			<button id="searchButton" type="submit">GO</button>
+		</form>
+
+		<!-- Weather icon placeholder -->
+		<i class="weather-icon fas fa-sun" style="color: orange;"></i>
+	</div>
+</body>
+</html>
