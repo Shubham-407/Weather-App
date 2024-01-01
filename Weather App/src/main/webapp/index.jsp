@@ -24,7 +24,8 @@ body {
 	height: 100vh;
 	align-items: center;
 	justify-content: center;
-	background: linear-gradient(to right, #2b40ff, #07121a);
+	background-image:
+		url(https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?cs=srgb&dl=pexels-pixabay-209831.jpg&fm=jpg);
 }
 
 .mainContainer {
@@ -152,14 +153,15 @@ image-logo {
 	<div class="mainContainer">
 		<form action="WeatherServlet" method="post" class="searchInput">
 			<input type="text" placeholder="Enter City Name" id="searchInput"
-				value="New Delhi" name="city" />
+				name="city" />
 			<button id="searchButton">
 				<i class="fa-solid fa-magnifying-glass"></i>
 			</button>
 		</form>
 		<div class="weatherDetails">
 			<div class="weatherIcon">
-				<img src="https://freepngimg.com/thumb/categories/2159.png" alt="Clouds" id="weather-icon">
+				<img src="https://freepngimg.com/thumb/categories/2159.png"
+					alt="Clouds" id="weather-icon">
 				<h2>${temperature}°C</h2>
 				<input type="hidden" id="wc" value="${weatherCondition}"> </input>
 			</div>
@@ -186,7 +188,7 @@ image-logo {
 						src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyaIguDPkbBMnUDQkGp3wLRj_kvd_GIQ4RHQar7a32mUGtwg3wHLIe0ejKqryX8dnJu-gqU6CBnDo47O7BlzCMCwRbB7u0Pj0CbtGwtyhd8Y8cgEMaSuZKrw5-62etXwo7UoY509umLmndsRmEqqO0FKocqTqjzHvJFC2AEEYjUax9tc1JMWxIWAQR4g/s320/wind.png">
 					<div class="wind">
 						<span>Wind Speed</span>
-						<h2>${windSpeed} km/h</h2>
+						<h2>${windSpeed}km/h</h2>
 					</div>
 				</div>
 			</div>
